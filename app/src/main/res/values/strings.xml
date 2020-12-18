@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gestionconference</string>
+    <string name="country__prompt">Choose profession</string>
+    <string-array name="profession">
+        <item>Professor</item>
+        <item>Students</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>
