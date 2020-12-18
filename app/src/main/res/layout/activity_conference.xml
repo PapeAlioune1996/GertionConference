@@ -15,9 +15,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="CONFERENCE LISTES"
+            android:text="CONFERENCE LISTS"
             android:textColor="#1C8A80"
-            android:textSize="45dp"
+            android:textSize="25dp"
             android:textStyle="bold" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="name"
+                android:text="Data Science"
                 android:textColor="@android:color/darker_gray" />
         </LinearLayout>
         <LinearLayout
@@ -53,10 +53,11 @@
                 android:layout_weight="2"
                 android:text="Date and hours"
                 android:textColor="#18BFB0"
+
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/prnom"
+                android:id="@+id/dt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -82,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:id="@+id/email"
-                android:text="lieu"
+                android:text="Surveying ABC adoption in enterprise"
                 android:textColor="@android:color/darker_gray" />
         </LinearLayout>
         <LinearLayout
@@ -90,30 +91,31 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:orientation="horizontal">
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:text="ADRESS"
+                android:text="DESCRIPTION"
                 android:textColor="#18BFB0"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/adrss"
+                android:id="@+id/desc"
                 android:layout_weight="1"
+
                 android:textColor="@android:color/darker_gray"
-                android:text="adress"/>
+                android:text="@string/dec"/>
         </LinearLayout>
+        <Button
+            android:id="@+id/join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:background="@color/teal_700"
+            android:text="JOIN CONFERENCE" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/join"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="200dp"
-        android:background="@color/teal_700"
-        android:text="JOIN CONFERENCE" />
+
 </LinearLayout>

@@ -7,18 +7,16 @@ public class UserDetails {
     public String prenom;
     public String email;
     public String adress;
-    public String professioon;
     public String password;
 
     public UserDetails() { }
 
-    public UserDetails(int ID, String nom, String prenom, String email, String adress, String professioon, String password) {
+    public UserDetails(int ID, String nom, String prenom, String email, String adress,  String password) {
         this.ID = ID;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
         this.adress = adress;
-        this.professioon = professioon;
         this.password = password;
     }
 
@@ -62,13 +60,6 @@ public class UserDetails {
         this.adress = adress;
     }
 
-    public String getProfessioon() {
-        return professioon;
-    }
-
-    public void setProfessioon(String professioon) {
-        this.professioon = professioon;
-    }
 
     public String getPassword() {
         return password;

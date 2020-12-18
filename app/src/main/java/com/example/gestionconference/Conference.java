@@ -8,9 +8,12 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Conference extends AppCompatActivity {
-    private TextView n,p,e,a;
+import java.text.DateFormat;
+import java.util.Date;
 
+public class Conference extends AppCompatActivity {
+    private TextView n,p,e,a,d,desc;
+    String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
     private Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +31,11 @@ public class Conference extends AppCompatActivity {
 
     private void recycletext() {
         n=findViewById(R.id.name);
-        p=findViewById(R.id.prnom);
-        e=findViewById(R.id.email);
-        a=findViewById(R.id.adrss);
 
+        e=findViewById(R.id.email);
+      d=findViewById(R.id.dt);
+      d.setText(currentDateTimeString);
+      desc=findViewById(R.id.desc);
         btn=findViewById(R.id.join);
     }
 }
